@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="conditional-rendering">
+        <span v-if="seen">现在你看到我了</span>
+    </div>
+</body>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+  const EventHandling = {
+    data()
+    {
+        return {seen:false};
+    }
+
+}
+
+Vue.createApp(EventHandling).mount('#conditional-rendering')
+</script>
+
+</html>
